@@ -22,6 +22,7 @@
       font-weight: bold;
       letter-spacing: 2px;
       border-bottom: 4px solid #e1bee7;
+      text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.6); /* pastel glow */
     }
     nav {
       display: flex;
@@ -38,6 +39,7 @@
     }
     nav a:hover {
       color: #d81b60;
+      text-shadow: 1px 1px 3px rgba(219, 112, 147, 0.4);
     }
     section {
       padding: 50px;
@@ -53,24 +55,31 @@
       font-size: 2em;
       margin-bottom: 15px;
       text-align: center;
+      text-shadow: 1px 1px 4px rgba(186, 104, 200, 0.3);
     }
     p {
       font-size: 1.1em;
       line-height: 1.8;
+      font-style: italic;
+      color: #444;
     }
     img {
       display: block;
-      max-width: 80%;
+      max-width: 50%; /* smaller images */
       margin: 20px auto;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05); /* zoom effect on hover */
     }
     iframe {
       display: block;
       margin: 20px auto;
       border-radius: 15px;
-      width: 80%;
-      height: 400px;
+      width: 70%;
+      height: 350px;
       border: none;
     }
   </style>
